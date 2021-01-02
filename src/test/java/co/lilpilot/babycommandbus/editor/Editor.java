@@ -1,4 +1,4 @@
-package co.lilpilot.babycommandbus.commandpattern;
+package co.lilpilot.babycommandbus.editor;
 
 import lombok.Getter;
 
