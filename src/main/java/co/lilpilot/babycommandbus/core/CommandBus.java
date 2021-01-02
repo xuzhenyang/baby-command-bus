@@ -3,12 +3,14 @@ package co.lilpilot.babycommandbus.core;
 import com.google.common.collect.LinkedListMultimap;
 import com.google.common.collect.ListMultimap;
 import com.google.common.collect.Lists;
+import org.springframework.stereotype.Component;
 
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
+@Component
 public class CommandBus implements ICommandBus{
 
     private final Map<Class<? extends Command>, ICommandHandler<? extends Command>> commandHandlerMap = new HashMap<>();
